@@ -1,7 +1,7 @@
 import "./App.css";
-// import "ghw-components-ut-test/dist/style.css";
+// import "ghw-components-ut-test-v2/dist/style.css";
 import CustomButton from "./components/Button";
-import { Button } from "ghw-components-ut-test";
+import { Button } from "ghw-components-ut-test-v2";
 import TestArea from "./TestArea";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       </section>
 
       <TestArea>
-        <Button className="bg-cyan-500 hover:bg-green-600" onClick={() => console.log("good-bye" + new Date())}>
+        <Button className="bg-indigo-500 hover:bg-green-600" onClick={() => console.log("good-bye" + new Date())}>
           This is lib button
         </Button>
       </TestArea>

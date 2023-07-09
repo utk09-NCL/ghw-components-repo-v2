@@ -1,16 +1,16 @@
 {
-  "name": "ghw-components-ut-test",
-  "version": "1.0.4",
+  "name": "ghw-components-ut-test-v2",
+  "version": "1.0.6",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/ghw-components-ut-test.umd.cjs",
-  "module": "./dist/ghw-components-ut-test.js",
+  "main": "./dist/ghw-components-ut-test-v2.umd.cjs",
+  "module": "./dist/ghw-components-ut-test-v2.js",
   "exports": {
     ".": {
-      "import": "./dist/ghw-components-ut-test.js",
-      "require": "./dist/ghw-components-ut-test.umd.cjs"
+      "import": "./dist/ghw-components-ut-test-v2.js",
+      "require": "./dist/ghw-components-ut-test-v2.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -22,10 +22,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "clean:install": "npm uninstall ghw-components-ut-test && rm -rf node_modules/ dist/ package-lock.json ghw-components-ut-test-*.tgz && npm install",
-    "build:lib": "npm run build && npm pack && npm add ghw-components-ut-test-*.tgz",
+    "clean:install": "npm uninstall ghw-components-ut-test-v2 && rm -rf node_modules/ dist/ package-lock.json ghw-components-ut-test-v2-*.tgz && npm install",
+    "build:lib": "npm run build && npm pack && npm add ghw-components-ut-test-v2-*.tgz",
     "build:prod": "npm run clean:install && npm run build:lib",
-    "publish:lib": "npm uninstall ghw-components-ut-test && rm -rf node_modules package-lock.json && npm publish"
+    "publish:lib": "npm uninstall ghw-components-ut-test-v2 && rm -rf node_modules package-lock.json && npm publish"
   },
   "author": "UT",
   "license": "MIT",
@@ -41,7 +41,11 @@
     "typescript": "^4.9.5",
     "vite": "^4.4.2"
   },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "dependencies": {
-    "ghw-components-ut-test": "file:ghw-components-ut-test-1.0.4.tgz"
+    "ghw-components-ut-test-v2": "file:ghw-components-ut-test-v2-1.0.5.tgz"
   }
 }

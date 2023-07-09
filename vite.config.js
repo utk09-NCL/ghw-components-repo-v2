@@ -8,9 +8,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "src/components/index.js"),
-      name: "ghw-components-ut-test",
+      name: "ghw-components-ut-test-v2",
       // the proper extensions will be added
-      fileName: "ghw-components-ut-test",
+      fileName: "ghw-components-ut-test-v2",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
