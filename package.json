@@ -1,0 +1,46 @@
+{
+  "name": "ghw-components-ut-test",
+  "version": "1.0.4",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ghw-components-ut-test.umd.cjs",
+  "module": "./dist/ghw-components-ut-test.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ghw-components-ut-test.js",
+      "require": "./dist/ghw-components-ut-test.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "description": "GHW UI Components in React and Tailwind",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean:install": "npm uninstall ghw-components-ut-test && rm -rf node_modules/ dist/ package-lock.json ghw-components-ut-test-*.tgz && npm install",
+    "build:lib": "npm run build && npm pack && npm add ghw-components-ut-test-*.tgz",
+    "build:prod": "npm run clean:install && npm run build:lib"
+  },
+  "author": "UT",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.2"
+  },
+  "dependencies": {
+    "ghw-components-ut-test": "file:ghw-components-ut-test-1.0.4.tgz"
+  }
+}
